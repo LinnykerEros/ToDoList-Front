@@ -1,0 +1,41 @@
+#questionDelete {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #191818;
+  border: 1px solid #2f2e2e;
+  width: 415px;
+  border-radius: 12px;
+  z-index: 200;
+  display: none;
+}
+#questionDelete p {
+  color: white;
+  font-size: 20px;
+}
+
+.buttonYesOrNo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.buttonYesOrNo button {
+  background: #2d2c2c;
+  border: 1px solid black;
+  padding: 7px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  color: #ccc;
+  cursor: pointer;
+  height: 50px;
+  font-size: 1.3rem;
+  outline: none;
+}
+
+#messageTaskDeleted {
+  display: none;
+  color: white;
+  font-size: 20px;
+}

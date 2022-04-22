@@ -1,0 +1,112 @@
+#edit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #191818;
+  border: 1px solid #2f2e2e;
+  width: 415px;
+  border-radius: 12px;
+  z-index: 200;
+  display: none;
+}
+#videoUpdated {
+  display: none;
+  color: white;
+  font-size: 20px;
+}
+
+#editar.abrir {
+  display: block !important;
+}
+
+form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-linha {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-linha label {
+  margin-bottom: 7px;
+  color: white;
+  font-size: 20px;
+}
+
+.form-linha input {
+  padding: 15px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  background: #2d2c2c;
+  color: white;
+}
+
+.form-linha button {
+  background: #2d2c2c;
+  border: 1px solid black;
+  padding: 7px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  color: #ccc;
+  cursor: pointer;
+  height: 50px;
+  font-size: 1.3rem;
+  outline: none;
+}
+.btnFechar {
+  /* margin-left: 360px; */
+  position: absolute;
+  top: -25px;
+  right: -18px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #2d2c2c;
+  background: #2d2c2c;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+#btnEdit {
+  /* position: absolute; */
+  top: -25px;
+  right: -18px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #2d2c2c;
+  background: #2d2c2c;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+#btnEdit:hover {
+  background: #1f1e1e;
+  cursor: pointer;
+}
+#btnDelete {
+  /* position: absolute; */
+  top: -25px;
+  right: -18px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #2d2c2c;
+  background: #2d2c2c;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+#btnDelete:hover {
+  background: #1f1e1e;
+  cursor: pointer;
+}
