@@ -31,8 +31,9 @@ h1 {
 #input #addTask {
   width: 350px;
   padding: 15px;
-  border-radius: 0 5px;
+  border-radius: 5px 0px 0px 5px;
   border: 1px none #191819;
+  background: hsl(236, 33%, 92%);
   outline: none;
   font-size: 1rem;
   color: black;
@@ -42,13 +43,14 @@ h1 {
 }
 #input button {
   width: 70px;
-  border-radius: 0px 5px;
+  border-radius: 0px 5px 5px 0;
   border: 1px none #191818;
+  background: hsl(236, 33%, 92%);
   color: black;
   outline: none;
 }
 #input button:hover {
-  background: hsl(236, 33%, 92%);
+  background: #ccc;
   cursor: pointer;
 }
 
