@@ -60,6 +60,11 @@ form {
   font-size: 1.3rem;
   outline: none;
 }
+
+#updatedTask:hover {
+  background: #1f1e1e;
+  cursor: pointer;
+}
 .btnFechar {
   /* margin-left: 360px; */
   position: absolute;

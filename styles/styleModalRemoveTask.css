@@ -33,6 +33,14 @@
   font-size: 1.3rem;
   outline: none;
 }
+#buttonYes:hover {
+  background: #1f1e1e;
+  cursor: pointer;
+}
+#buttonNo:hover {
+  background: #1f1e1e;
+  cursor: pointer;
+}
 
 #messageTaskDeleted {
   display: none;

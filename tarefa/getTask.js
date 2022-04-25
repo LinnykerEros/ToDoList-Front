@@ -32,29 +32,16 @@ updatedTask.addEventListener("click", () => {
     })
     .catch((error) => console.log(error));
 });
-// function teste(task) {
-//   let testes = document.getElementById("addTask");
-//   testes.addEventListener("click", () => {
-//     if (task.includes(addTask.value)) {
-//       console.log(task.includes(testes.value));
-//     }
-//   });
-// }
+
 function getTasks() {
   toDoList.innerHTML = "";
-
   axios
     .get(url)
     .then((response) => {
       const data = response.data;
-      // console.log(addTask.value);
-      // console.log(data.tarefas.tarefa);
-      // console.log(JSON.stringify(data.tarefas.tarefa));
-
       for (let i in data.tarefas) {
         let id = data.tarefas[i]._id;
         let tasks = data.tarefas[i].tarefa;
-        // teste(tasks);
         createLI(tasks, id);
       }
     })
@@ -75,7 +62,7 @@ function createLI(tasks, id) {
   iconPencil = document.createElement("i");
   iconDelete = document.createElement("i");
   iconPencil.setAttribute("class", "fa fa-pencil");
-  iconPencil.addEventListener("click", () => {
+  buttonPencil.addEventListener("click", () => {
     salvarTarefa(tasks);
     windowBackground.style.display = "block";
     edit.style.display = "block";
@@ -83,7 +70,7 @@ function createLI(tasks, id) {
   });
   iconDelete.setAttribute("class", "fa fa-trash");
   iconDelete.setAttribute("id", "delete");
-  iconDelete.addEventListener("click", () => {
+  buttonDelete.addEventListener("click", () => {
     windowBackground.style.display = "block";
     questionDelete.style.display = "block";
     let buttonYes = document.getElementById("buttonYes");
