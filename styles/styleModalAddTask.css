@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  background: #191818;
+  background: hsl(236, 33%, 92%);
   border: 1px solid #2f2e2e;
   width: 415px;
   border-radius: 12px;
@@ -25,7 +25,6 @@
 }
 
 #btnFechar {
-  /* margin-left: 360px; */
   position: absolute;
   top: -25px;
   right: -18px;
@@ -40,5 +39,5 @@
 }
 
 #succesfully {
-  color: white;
+  color: black;
 }

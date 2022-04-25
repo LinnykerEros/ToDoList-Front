@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  background: #191818;
+  background: hsl(236, 33%, 92%);
   border: 1px solid #2f2e2e;
   width: 415px;
   border-radius: 12px;
@@ -13,7 +13,7 @@
 }
 #videoUpdated {
   display: none;
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
@@ -34,7 +34,7 @@ form {
 
 .form-linha label {
   margin-bottom: 7px;
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
@@ -44,17 +44,17 @@ form {
   outline: none;
   border: 1px solid black;
   font-size: 1.2rem;
-  background: #2d2c2c;
-  color: white;
+  background: hsl(236, 33%, 92%);
+  color: black;
 }
 
 .form-linha button {
-  background: #2d2c2c;
+  background: hsl(236, 33%, 92%);
   border: 1px solid black;
   padding: 7px;
   margin-bottom: 10px;
   border-radius: 12px;
-  color: #ccc;
+  color: black;
   cursor: pointer;
   height: 50px;
   font-size: 1.3rem;
@@ -66,7 +66,6 @@ form {
   cursor: pointer;
 }
 .btnFechar {
-  /* margin-left: 360px; */
   position: absolute;
   top: -25px;
   right: -18px;
@@ -81,7 +80,6 @@ form {
 }
 
 #btnEdit {
-  /* position: absolute; */
   top: -25px;
   right: -18px;
   width: 50px;
@@ -98,7 +96,6 @@ form {
   cursor: pointer;
 }
 #btnDelete {
-  /* position: absolute; */
   top: -25px;
   right: -18px;
   width: 50px;

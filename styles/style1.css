@@ -1,53 +1,54 @@
 body {
   font-family: "Roboto Mono", monospace;
-  background-color: grey;
-  background-size: cover;
+  background: url("../images/bg-desktop-light.jpg") no-repeat right top fixed;
+  background-color: white;
+  background-image: linear-gradient (hsl(192, 100%, 67%) to hsl(280, 87%, 65%));
+  background-size: contain;
+  font-size: 18px;
   margin: 0;
 }
+
 h1 {
   font-size: 60px;
-  text-align: center;
+  text-align: left;
+  color: white;
 }
 #container {
   margin: 0 auto;
   width: 100%;
   max-width: 450px;
-  margin-top: 50px;
+  /* margin-top: 8px; */
   margin-bottom: 50px;
-  background-color: #2b2a2a;
   padding: 55px;
   border-radius: 12px;
 }
 
 #input {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
-  /* align-items: center; */
   margin-top: 35px;
 }
 #input #addTask {
   width: 350px;
-  /* height: 30px; */
   padding: 15px;
-  border-radius: 12px;
-  border: 1px solid #191819;
+  border-radius: 0 5px;
+  border: 1px none #191819;
   outline: none;
   font-size: 1rem;
-  background: #191818;
-  color: white;
+  color: black;
 }
-
+#input input::placeholder {
+  color: black;
+}
 #input button {
-  width: 45px;
-  border-radius: 12px;
-  border: 1px solid #191818;
-  background: #191818;
-  color: white;
+  width: 70px;
+  border-radius: 0px 5px;
+  border: 1px none #191818;
+  color: black;
   outline: none;
 }
 #input button:hover {
-  background: #1f1e1e;
+  background: hsl(236, 33%, 92%);
   cursor: pointer;
 }
 
@@ -61,14 +62,12 @@ h1 {
 }
 
 #toDoList li {
-  /* height: 50px; */
   padding: 20px;
-  background: #191818;
+  background: hsl(236, 33%, 92%);
   border-radius: 12px;
   display: flex;
   justify-content: space-between;
-  color: white;
-  /* visibility: hidden; */
+  color: black;
 }
 #toDoList p {
   max-width: 300px;
