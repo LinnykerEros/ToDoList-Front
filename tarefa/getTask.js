@@ -1,4 +1,4 @@
-const url = "http://localhost:5500/tarefas";
+const url = "https://backend-to-do-list-api.herokuapp.com/tarefas";
 const toDoList = document.getElementById("toDoList");
 let edit = document.querySelector("#edit");
 let windowBackground = document.querySelector("#windowBackground");
@@ -7,6 +7,7 @@ let updatedTask = document.getElementById("updatedTask");
 let btnFechar = document.querySelector(".btnFechar");
 let videoUpdated = document.getElementById("videoUpdated");
 let messageTaskDeleted = document.getElementById("messageTaskDeleted");
+
 let idCurrent;
 
 btnFechar.addEventListener("click", (e) => {
@@ -31,16 +32,29 @@ updatedTask.addEventListener("click", () => {
     })
     .catch((error) => console.log(error));
 });
-
+// function teste(task) {
+//   let testes = document.getElementById("addTask");
+//   testes.addEventListener("click", () => {
+//     if (task.includes(addTask.value)) {
+//       console.log(task.includes(testes.value));
+//     }
+//   });
+// }
 function getTasks() {
   toDoList.innerHTML = "";
+
   axios
     .get(url)
     .then((response) => {
       const data = response.data;
+      // console.log(addTask.value);
+      // console.log(data.tarefas.tarefa);
+      // console.log(JSON.stringify(data.tarefas.tarefa));
+
       for (let i in data.tarefas) {
         let id = data.tarefas[i]._id;
         let tasks = data.tarefas[i].tarefa;
+        // teste(tasks);
         createLI(tasks, id);
       }
     })
