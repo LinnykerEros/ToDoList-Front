@@ -26,7 +26,7 @@ addTask.addEventListener("change", () => {
 
           setInterval(() => {
             location.reload();
-          }, 700);
+          }, 400);
         })
         .catch((error) => console.log(error));
     }
