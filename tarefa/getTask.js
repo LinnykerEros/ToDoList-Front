@@ -5,7 +5,7 @@ let windowBackground = document.querySelector("#windowBackground");
 let questionDelete = document.querySelector("#questionDelete");
 let updatedTask = document.getElementById("updatedTask");
 let btnFechar = document.querySelector(".btnFechar");
-let videoUpdated = document.getElementById("videoUpdated");
+let videoUpdated = document.getElementById("taskUpdated");
 let messageTaskDeleted = document.getElementById("messageTaskDeleted");
 
 let idCurrent;
@@ -22,11 +22,11 @@ updatedTask.addEventListener("click", () => {
   axios
     .put(`${url}/${idCurrent}`, updateTarefa)
     .then((response) => {
-      videoUpdated.style.display = "block";
+      taskUpdated.style.display = "block";
       setInterval(() => {
         edit.style.display = "none";
         windowBackground.style.display = "none";
-        videoUpdated.style.display = "none";
+        taskUpdated.style.display = "none";
         location.reload();
       }, 1000);
     })
