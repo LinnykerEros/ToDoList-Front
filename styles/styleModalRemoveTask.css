@@ -36,10 +36,12 @@
 #buttonYes:hover {
   background: #1f1e1e;
   cursor: pointer;
+  color: white;
 }
 #buttonNo:hover {
   background: #1f1e1e;
   cursor: pointer;
+  color: white;
 }
 
 #messageTaskDeleted {
