@@ -5,7 +5,7 @@ let windowBackground = document.querySelector("#windowBackground");
 let questionDelete = document.querySelector("#questionDelete");
 let updatedTask = document.getElementById("updatedTask");
 let btnFechar = document.querySelector(".btnFechar");
-let videoUpdated = document.getElementById("taskUpdated");
+let taskUpdated = document.getElementById("taskUpdated");
 let messageTaskDeleted = document.getElementById("messageTaskDeleted");
 
 let idCurrent;
